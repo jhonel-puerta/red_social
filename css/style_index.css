@@ -1,0 +1,702 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    transition-duration: .4s;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.left{
+    width: 25%;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.center{
+    width: 55%;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: 20px;
+    overflow-y: scroll;
+}
+.right{
+    width: 18%;
+    height: 100vh;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #cbc8c823;
+    border-radius: 20px;
+}
+
+/*-------------- header left styles -------------*/
+
+
+/*header*/
+
+.header-left{
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left #icon{
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/logo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+.header-left .buscador{
+    width: 75%;
+    height: 50px;
+}
+.buscador .buscar{
+    width: 100%;
+    height: 90%;
+    border: none;
+    background-color: #F2F3F4;
+    color:black;
+    font-size: 18px;
+    outline-color: hsl(204, 70%, 63%);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+/*tabla de posiciones*/
+
+.tabla-posiciones{
+    width: 90%;
+    height: 200px;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px #D5D8DC;
+}
+.tabla-posiciones .linne{
+    width: 8px;
+    height: 80%;
+    background-color: #5DADE2;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.tabla-posiciones .contentP-tabla{
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contentP-tabla .cont-perfiles-winner{
+    width: 80%;
+    height: 70px;
+    margin-top: -25px;
+    display: flex;
+    justify-content: space-between;
+}
+.cont-perfiles-winner .perfil-winner{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-image: url(../images/perfil1.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 10px #D5D8DC;
+}
+.cont-perfiles-winner .perfil-winner2{
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background-image: url(../images/perfil2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 20px #b6b6b6;
+}
+.cont-perfiles-winner .perfil-winner3{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-image: url(../images/perfil3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 10px #D5D8DC;
+}
+.contentP-tabla .cont-users-points{
+    width: 100%;
+    height: 80%;
+}
+
+.cont-users-points .tittle-tabla{
+    color: #5DADE2;
+    font-style: bold;
+    font-size: 20px;
+}
+.names-winner{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    color: #566573;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.names-winner .names{
+    box-sizing: border-box;
+    padding-right: 30px;
+    border-right: solid 2px #56657348;
+    font-style: unset;
+    font-weight: lighter;
+}
+.names-winner .user{
+    margin-top: 10px;
+    display: flex;
+}
+.user .foto{
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/perfil2.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 5px;
+    border-radius: 50%;
+
+}
+
+.names-winner .points{
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 20px;
+    color: #566573;
+}
+.points h3{
+    margin-top: 10px;
+}
+
+/*------------------ noticias ------------ */
+
+.noticias{
+    width: 95%;
+    height: min-content;
+    background-color:white;
+    /* box-shadow: 0 0 10px #D5D8DC; */
+    margin-top: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    overflow-y: scroll;
+}
+.noticias .not1{
+    width: 100%;
+    height: min-content;
+    margin-top: 10px;
+}
+.noticias .fecha{
+    width: min-content;
+    height: min-content;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #F8F9F9;
+    color: rgb(48, 48, 48);
+}
+.noticias .noticia{
+    width: 100%;
+    height: min-content;
+    box-sizing: border-box;
+    padding-right: 10px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding-left: 20px;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #D5D8DC;
+    cursor: pointer;
+    padding-top: 10px;
+}
+
+.noticia .imagen1{
+    margin-top: 8px;
+    width: 250px;
+    height: 150px;
+    background-image: url(https://www.inversionsimple.com/wp-content/uploads/2020/10/portada-bitcoin.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+
+.noticia .imagen2{
+    margin-top: 8px;
+    width: 250px;
+    height: 150px;
+    background-image: url(https://www.redusers.com/noticias/wp-content/uploads/2013/02/red-cableada-650x450.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    margin-right: 5px;
+}
+.noticia .text-content{
+    width: max-content;
+    height: min-content;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+.noticia h3{
+    font-size: 18px;
+    color: #212F3D;
+}
+.noticia p{
+    font-size: 15px;
+    color: #212F3D;
+    margin-top: 5px;
+}
+
+/*----------- center aplication design ----------------- */
+
+.center .header-center{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.header-center .notificacion{
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/campana.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+.notificacion .notif-count{
+    width: min-content;
+    height: min-content;
+    padding: 4px;
+    background-color: #EC7063;
+    color: white;
+    font-size: 11px;
+    border-radius: 50%;
+}
+
+.header-center .cont-btns-publicacion{
+    width: min-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.cont-btns-publicacion .btn-jugar{
+    width: 120px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #000000a6;
+    box-shadow: 0 0 5px rgb(202, 202, 202);
+    cursor: pointer;
+    transition-duration: .4s;
+}
+.btn-jugar:hover{
+    width: 140px;
+}
+a{
+    text-decoration: none;
+    color: #5dade2c2;
+    font-weight: bold;
+    font-size: 20px;
+}
+.cont-btns-publicacion .btn-publicar{
+    width: 140px;
+    height: 50px;
+    background-color: white;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: #58D68D;
+    box-shadow: 0 0 20px #58d68c65;
+    transition-duration: .4s;
+}
+.btn-publicar:hover{
+    width: 160px;
+}
+.perfil-user-p{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    image-resolution: unset;
+    image-rendering: pixelated;
+}
+
+
+/*publicaciones*/
+
+.publicacion{
+    width: 100%;
+    background-color: white;
+    height: 480px;
+    display: flex;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 25px 3px rgba(0, 0, 0, 0.137);
+}
+.public-cont-a{
+    width: 80px;
+}
+.perfil-user-p{
+    width: 50px;
+    height: 50px;
+    background-image: url(../images/perfil2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.public-cont-b{
+    width: 90%;
+}
+
+.header-publicacion{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h-cont-n-f{
+    display: flex;
+}
+.header-publicacion h2{
+    color: #273746;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.header-publicacion h3{
+    color:#5DADE2;
+    font-size: 12px;
+    background-color:#EBF5FB;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: lighter;
+}
+.header-publicacion .compartir-icon{
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/compartir.png);
+    background-size: cover;
+    opacity: 0.7;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    right: 0px;
+}
+
+.public-cont-b .cont-txt-public{
+    width: 100%;
+    height: 100px;
+    color: #566573;
+    position: relative;
+}
+
+.cont-txt-public h3{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    font-size: 15px;
+    color:skyblue;
+}
+.public-cont-b .cont-media-public{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cont-media-public .image1{
+    width: 150px;
+    height: 230px;
+    background-image: url("https://gestion.pe/resizer/9IuDlzHSqCq416tTFNh9hi7d0vI=/980x0/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/5QHKHJ4RMBHXXASY27667ZOO5Q.jpg");
+    border-radius: 20px;
+}
+
+.cont-media-public .image2{
+    width: 200px;
+    height: 230px;
+    background-image: url("https://gestion.pe/resizer/9IuDlzHSqCq416tTFNh9hi7d0vI=/980x0/smart/filters:format(jpeg):quality(75)/arc-anglerfish-arc2-prod-elcomercio.s3.amazonaws.com/public/5QHKHJ4RMBHXXASY27667ZOO5Q.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+}
+.cont-media-public .image3{
+    width: 200px;
+    height: 230px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+}
+
+
+/* styles bottom buttons */
+
+.public-cont-b .cont-footer{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.cont-footer .cont-btns-reaction{
+    width: max-content;
+    display: flex;
+    margin-right: 30px;
+
+}
+
+/*------reacciones------*/
+
+.cont-btns-reaction .react3{
+    width: 80px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*contenedor de la caja de texto buscar*/
+
+.cont-footer .box-coment{
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.box-coment .comentar{
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 18px;
+    outline-color: rgba(224, 224, 224, 0.603);
+    border: none;
+    box-sizing: border-box;
+    padding-left: 5px;
+    background-color: rgba(224, 224, 224, 0.37);
+}
+
+.like{
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+#heart{
+    background-image: url(../images/heart.png);
+}
+
+
+/*---------- header right ----------*/
+
+.right .header-right{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.header-right .foto-perfil{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url(../images/perfil3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+
+.header-right h2{
+    color: #5DADE2;
+    font-weight: bolder;
+}
+
+.cont-aplicaciones{
+    width: 100%;
+    height: max-content;
+    margin-top: 20px;
+}
+.cont-btns-aplicaciones{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cont-btns-aplicaciones .icon-aplic{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    border: solid 3px white;
+    border-radius: 10px;
+}
+.cont-aplicaciones h3{
+    margin-left: 10px;
+    color: #273746;
+    font-weight: normal;
+}
+
+/*iconos*/
+
+#icon1{
+    background-image: url(../images/apps/email.png);
+}
+#icon2{
+    background-image: url(../images/apps/joystick.png);
+}
+#icon3{
+    background-image: url(../images/apps/laptop.png);
+}
+#icon4{
+    background-image: url(../images/apps/cart.png);
+}
+#icon5{
+    background-image: url(../images/apps/clock.png);
+}
+#icon6{
+    background-image: url(../images/apps/search.png);
+}
+
+/*----------amigos-----------*/
+
+.amigos{
+    width: 100%;
+    height: 250px;
+}
+.amigos h3{
+    color: #273746;
+    font-weight: normal;
+}
+
+.cont-amigos{
+    margin-top: 10px;
+}
+
+.box-amigo{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.box-amigo .foto-perfil-amigo{
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.box-amigo h3{
+    font-size: 17px;
+    color: #566573;
+}
+
+/*fotos de amigos*/
+
+#fta1{
+    background-image: url(../images/perfil2.jpg);
+}
+
+#fta2{
+    background-image: url(../images/perfil1.jfif);
+}
+
+#fta3{
+    background-image: url(../images/perfil3.jpg);
+}
+
+#fta4{
+    background-image: url(../images/perfil1.jfif);
+}
+
+
+/*------------ scroll center -----------*/
+
+.center::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 4px;    /* Tamaño del scroll en horizontal */
+    display: none;
+}
+
+
+
+/*noticias*/
+
+.noticias::-webkit-scrollbar {
+    width: 0px;     /* Tamaño del scroll en vertical */
+    height: 0px;    /* Tamaño del scroll en horizontal */
+}
+
+.noticias:hover::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en vertical */
+    height: 4px;    /* Tamaño del scroll en horizontal */
+}
+
+
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+.noticias::-webkit-scrollbar-thumb {
+    background: rgba(204, 204, 204, 0.534);
+    border-radius: 4px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.noticias::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.noticias::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
